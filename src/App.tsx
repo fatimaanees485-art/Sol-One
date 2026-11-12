@@ -122,7 +122,7 @@ export default function App() {
       {/* Full-webpage animated NASA background */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <img
-          src="/src/assets/images/nasa_artemis_launch_1794411651374.jpg"
+          src="/assets/images/nasa_artemis_launch_1794411651374.jpg"
           alt="NASA Artemis SLS Launch"
           aria-hidden="true"
           className="w-full h-full object-cover opacity-55 nasa-ken-burns"

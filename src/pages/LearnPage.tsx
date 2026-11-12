@@ -154,17 +154,17 @@ export const LearnPage: React.FC<LearnPageProps> = ({ donkiFlares, marsWeather }
             {
               title: 'ISS Spacewalk (EVA)',
               caption: 'Astronauts work outside the International Space Station above Earth.',
-              src: '/src/assets/images/nasa_spacewalk_earth_1794411651165.jpg',
+              src: '/assets/images/nasa_spacewalk_earth_1794411651165.jpg',
             },
             {
               title: 'Artemis SLS Launch',
               caption: 'NASA’s Space Launch System carries crew toward the Moon.',
-              src: '/src/assets/images/nasa_artemis_launch_1794411651374.jpg',
+              src: '/assets/images/nasa_artemis_launch_1794411651374.jpg',
             },
             {
               title: 'Mars Rover Curiosity',
               caption: 'Exploring Gale Crater and measuring Martian weather every sol.',
-              src: '/src/assets/images/nasa_mars_rover_1794411652013.jpg',
+              src: '/assets/images/nasa_mars_rover_1794411652013.jpg',
             },
           ].map((item) => (
             <div
