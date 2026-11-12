@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+@layer base {
+  body {
+    background-color: #0B1320;
+    color: #EDE7DA;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.paper-grain {
+  background-color: #EDE7DA;
+  color: #0B1320;
+  background-image: radial-gradient(rgba(11, 19, 32, 0.04) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.reduced-motion *, .reduced-motion *::before, .reduced-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+@keyframes nasaKenBurns {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.05) translate3d(-1%, -1%, 0);
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+.nasa-ken-burns {
+  animation: nasaKenBurns 22s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes crewWalk {
+  0%, 100% {
+    transform: translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(18px) translateY(-2px);
+  }
+  50% {
+    transform: translateX(36px) translateY(0px);
+  }
+  75% {
+    transform: translateX(18px) translateY(-2px);
+  }
+}
+
+.crew-walk {
+  animation: crewWalk 5s ease-in-out infinite;
+}
